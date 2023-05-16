@@ -15,14 +15,14 @@ export default function Home() {
     <div className="text-black font-eczar">
       <NextSeo
         title="Home: nine4"
-        description="Welcome to The Internet Generation!"
+        description="Welcome to Indie NAdu!"
         canonical="https://nine4-3.vercel.app/"
         openGraph={{
           url: "https://nine4-3.vercel.app/",
         }}
       />
       <Head>
-        <title>TIG</title>
+        <title>INDIE NADU</title>
         <link rel="icon" href="/favicon.jpg" />
       </Head>
       <Header

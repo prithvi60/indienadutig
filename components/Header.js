@@ -11,15 +11,15 @@ export default function Header({
   const [flyerTwo, setFlyerTwo] = React.useState(false);
 
   return (
-    <header class="fixed top-0 w-full clearNav z-50 bg-white  animate-fade-in  w-screen border-bot">
+    <header class="fixed top-0 w-full clearNav z-50 bg-white  animate-fade-in  w-screen ">
       <div class="max-w-2xl md:max-w-5xl mx-auto flex flex-wrap p-2 md:p-3 flex-col md:flex-row">
-        <div className="flex flex-row items-center justify-between md:p-3 md:p-1">
-          <a
+        <div className="flex flex-row items-center justify-between md:p-2 md:p-1">
+          {/* <a
             href="/"
             class="flex text-3xl text-white-100 font-medium mb-4 md:mb-0 md:animate-bounce"
           >
             TIG
-          </a>
+          </a> */}
           <button
             className="text-white pb-4 cursor-pointer leading-none px-3 py-1 md:hidden outline-none focus:outline-none content-end ml-auto"
             type="button"
@@ -143,7 +143,7 @@ export default function Header({
               }
               class="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04"
             >
-              sec1
+              Nav1
             </ul>
             <div className="relative">
               <button
@@ -162,25 +162,8 @@ export default function Header({
                     })
                   }
                 >
-                  sec2
+                  Nav2
                 </span>
-                <svg
-                  className={
-                    flyer === true
-                      ? "transform rotate-180 ml-3 h-5 w-5 transition ease-out duration-200"
-                      : "ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                  }
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
               </button>
               {/* <div
                 onMouseLeave={() => setFlyer(false)}
@@ -214,7 +197,7 @@ export default function Header({
                           NINE4 TEMPLATE #2
                         </p>
                         <p className="mt-1 text-sm text-gray-500">
-                          Second Template
+                          Navond Template
                         </p>
                       </div>
                     </a>
@@ -244,7 +227,7 @@ export default function Header({
               }
               class="mr-12 md:ml-11 ml-0 cursor-pointer text-gray-300 hover:text-white font-semibold tr04"
             >
-              sec3
+              Nav3
             </ul>
             <ul
               onClick={() =>
@@ -255,7 +238,7 @@ export default function Header({
               }
               class="mr-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04"
             >
-              sec4
+              Nav4
             </ul>
           </div>
           {/* <a
