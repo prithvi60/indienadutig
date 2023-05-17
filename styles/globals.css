@@ -5,7 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@700&family=IM+Fell+French+Canon&display=swap");
-
+@font-face {
+  font-family: "Carter";
+  src: url("/fonts/CarterOne-Regular.ttf");
+}
 html,
 body {
   padding: 0;

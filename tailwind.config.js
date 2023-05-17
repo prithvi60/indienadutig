@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         eczar: ["Eczar", "sans-serif"],
+        carter: ["Carter", "sans-serif"],
       },
       colors: {
         white: {

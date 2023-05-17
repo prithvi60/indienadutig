@@ -19,7 +19,7 @@ export default function Header({
         // borderBottomRightRadius: "5%",
       }}
     >
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 font-carter">
         <a href="https://flowbite.com/" class="flex items-center">
           <img src="/musiclogo.png" class="h-10 mr-1" alt="Flowbite Logo" />
           <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">
@@ -36,7 +36,7 @@ export default function Header({
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 text-md text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded="false"
             onClick={() => setNavbarOpen(!navbarOpen)}
