@@ -1,13 +1,10 @@
 import Image from "next/image";
 import heroPic from "../public/images/1.png";
 import TwoPic from "../public/images/2.png";
-import ThreePic from "../public/images/3.png";
 import FourPic from "../public/images/4.png";
-import FivePic from "../public/images/5.png";
-import SixPic from "../public/images/6.png";
-import SevenPic from "../public/images/7.png";
-import EightPic from "../public/images/8.png";
-import NinePic from "../public/images/9.png";
+import ContactPic from "../public/images/47.png";
+
+import { CarouselCard } from "./Carousal";
 
 const shimmer = (w, h) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -29,8 +26,8 @@ const toBase64 = (str) =>
     : window.btoa(str);
 export default function Main({ videoRef, eventRef, campaignRef, contactRef }) {
   return (
-    <section class="text-gray-600 body-font ">
-      <section id="hero">
+    <section class="text-gray-600 body-font" style={{ zIndex: 100 }}>
+      <section id="hero" ref={videoRef}>
         <Image
           src={heroPic}
           alt="Picture of the author"
@@ -40,7 +37,7 @@ export default function Main({ videoRef, eventRef, campaignRef, contactRef }) {
           )}`}
         />
       </section>
-      <section id="two" ref={videoRef}>
+      <section id="two" ref={eventRef}>
         <Image
           src={TwoPic}
           alt="Picture of the author"
@@ -50,17 +47,7 @@ export default function Main({ videoRef, eventRef, campaignRef, contactRef }) {
           )}`}
         />
       </section>{" "}
-      <section id="three" ref={eventRef}>
-        <Image
-          src={ThreePic}
-          alt="Picture of the author"
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(700, 475)
-          )}`}
-        />
-      </section>{" "}
-      <section id="four" ref={campaignRef}>
+      <section id="four">
         <Image
           src={FourPic}
           alt="Picture of the author"
@@ -70,9 +57,16 @@ export default function Main({ videoRef, eventRef, campaignRef, contactRef }) {
           )}`}
         />
       </section>{" "}
-      <section id="five" ref={contactRef}>
+      <section
+        id="three"
+        ref={campaignRef}
+        style={{ background: "#FE9677", paddingTop: "2%", marginTop: "2%" }}
+      >
+        <CarouselCard />
+      </section>{" "}
+      <section id="six" ref={contactRef}>
         <Image
-          src={FivePic}
+          src={ContactPic}
           alt="Picture of the author"
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(
@@ -80,46 +74,6 @@ export default function Main({ videoRef, eventRef, campaignRef, contactRef }) {
           )}`}
         />
       </section>{" "}
-      <section id="six">
-        <Image
-          src={SixPic}
-          alt="Picture of the author"
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(700, 475)
-          )}`}
-        />
-      </section>{" "}
-      <section id="seven">
-        <Image
-          src={SevenPic}
-          alt="Picture of the author"
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(700, 475)
-          )}`}
-        />
-      </section>{" "}
-      <section id="eight">
-        <Image
-          src={EightPic}
-          alt="Picture of the author"
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(700, 475)
-          )}`}
-        />
-      </section>{" "}
-      <section id="nine">
-        <Image
-          src={NinePic}
-          alt="Picture of the author"
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(700, 475)
-          )}`}
-        />
-      </section>
     </section>
   );
 }
