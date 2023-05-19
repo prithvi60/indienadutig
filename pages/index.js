@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Main from "../components/Main";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
 import { useRef } from "react";
 
@@ -37,7 +37,7 @@ export default function Home() {
         contactRef={contactRef}
         campaignRef={campaignRef}
       />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
