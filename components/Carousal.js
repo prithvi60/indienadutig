@@ -10,7 +10,7 @@ export const CarouselCard = ({images}) => {
         return (
           <div>
             <Image src={image} alt="Picture of the artist" placeholder="blur" />
-            <p className="legend">Artist {idx + 1}</p>
+            {/* <p className="legend">Artist {idx + 1}</p> */}
           </div>
         );
       })}

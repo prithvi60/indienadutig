@@ -14,15 +14,17 @@ export default function Home() {
   return (
     <div className="text-black font-eczar">
       <NextSeo
-        title="Home: nine4"
-        description="Welcome to Indie NAdu!"
-        canonical="https://nine4-3.vercel.app/"
+        title="Indie நாடு"
+        description="
+        Tamilnadu's Independent Music and Art Festival
+        "
+        canonical="https://indienadu.netlify.app/"
         openGraph={{
-          url: "https://nine4-3.vercel.app/",
+          url: "https://indienadu.netlify.app/",
         }}
       />
       <Head>
-        <title>INDIE NADU</title>
+        <title>INDIE நாடு</title>
         <link rel="icon" href="/favicon.jpg" />
       </Head>
       <Header
