@@ -25,7 +25,7 @@ export default function Home() {
       />
       <Head>
         <title>INDIE நாடு</title>
-        <link rel="icon" href="/favicon.jpg" />
+        <link rel="icon" href="/indielogo.jpg" />
       </Head>
       <Header
         videoRef={videoRef}

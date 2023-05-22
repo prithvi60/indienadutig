@@ -15,7 +15,7 @@ export default function Header({
       class=" dark:bg-gray-900 fixed w-full z-20 top-0 left-0 shadow-md dark:border-gray-600 animate-fade-in 
     animated-bg"
       style={{
-        borderBottomLeftRadius: "10%",
+        borderBottomLeftRadius: "12%",
         // borderBottomRightRadius: "5%",
       }}
     >
@@ -23,8 +23,8 @@ export default function Header({
         <a href="/" class="flex items-center">
           <img
             src="/indielogo.jpg"
-            class="h-8 mr-1"
-            alt="Flowbite Logo"
+            class="h-9 mr-1"
+            alt="IndieNadu Logo"
             style={{ borderRadius: "14%" }}
           />
           {/* <span class="self-center text-lg font-bold whitespace-nowrap text-white-100 font-poppins">
