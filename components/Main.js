@@ -118,7 +118,7 @@ const toBase64 = (str) =>
     : window.btoa(str);
 export default function Main({ videoRef, eventRef, campaignRef, contactRef }) {
   return (
-    <section class="text-gray-600 body-font" style={{ zIndex: 100 }}>
+    <section className="text-gray-600 body-font" style={{ zIndex: 100 }}>
       <section id="hero" ref={videoRef} className={"mt-14 md:mt-8"}>
         <Image
           src={heroPic}
