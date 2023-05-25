@@ -70,8 +70,9 @@ export default function Header({
           id="navbar-sticky"
         >
           <ul
+            style={{ borderBottomLeftRadius: "12%" }}
             className={
-              "flex flex-col p-4 md:p-0 mt-4 w-full font-medium border border-gray-100 rounded-lg bg-gray md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700" +
+              "flex flex-col p-2 md:p-0 mt-4 w-full font-medium border border-gray-100 rounded-lg bg-gray md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700" +
               (navbarOpen ? "bg-red-700" : "bg-transparent")
             }
           >
